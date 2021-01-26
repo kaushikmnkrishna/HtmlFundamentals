@@ -1,0 +1,112 @@
+/* .profileStyles {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+
+.animate {
+  -moz-animation-duration:1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.one {
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay: 0.5s;
+animation-delay: 0.5s;
+}
+
+/*==== FADE IN UP ===*/
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -moz-animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
+.headerStyles{
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+.linkStyles {
+  display:inline-block;
+  margin: 1px 300px;
+  font-size:18px;
+  font-weight: bold;
+}
+
+.profileStyles {
+  float:right;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  border: 2px solid grey;
+}
+.titleStyles {
+  text-align: center;
+}
+h3 {
+  font-size:20px;
+  text-decoration: underline;
+}
+p, li {
+  font-size:18px;
+  padding: 5px;
+}
+hr{
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px DodgerBlue;
+}
+
+.separator--line {
+  border: 0;
+  width: 0;
+  animation: separator-width 1s ease-out forwards;
+}
+@keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
